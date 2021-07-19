@@ -1,5 +1,5 @@
 services:
-    NodeGIT:
+    nodegit:
       image: spearks/gitwithnodejs:latest
       ports:
         - 8080:8080 # Optional
