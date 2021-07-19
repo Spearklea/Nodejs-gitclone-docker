@@ -1,0 +1,13 @@
+services:
+    NodeGIT:
+      image: spearks/gitwithnodejs:latest
+      ports:
+        - 8080:8080 # Optional
+      environment:
+        - startCommand='ls' # Run command after clone repo, change to your commands 
+        - privateRepo=1 # 1 for yes || 0 for no
+        - GithubUsername=Example # your github username
+        - GIT_PASSWORD='secret' # necessary if privateRepo=1
+        - GithubRepoName=Example # your github repo name
+      volumes:
+        - /home/runner/git/
