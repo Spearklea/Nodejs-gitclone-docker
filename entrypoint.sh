@@ -7,7 +7,7 @@
 if [ $privateRepo == 1 ]
 then
     echo "[git] Trying to clone the private repository!"
-    GIT_ASKPASS=./git_password.sh git clone https://$GithubUsername@github.com/$GithubUsername/$GithubRepoName git
+    GIT_ASKPASS=/git_password.sh git clone https://$GithubUsername@github.com/$GithubUsername/$GithubRepoName git
     cd git
     $startCommand
 else
