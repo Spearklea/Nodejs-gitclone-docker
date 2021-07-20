@@ -3,7 +3,7 @@
 # Entrypoint to clone a git repo 
 #
 #
-
+rm -rf /home/runner/git/*
 if [ $privateRepo == 1 ]
 then
     echo "[git] Trying to clone the private repository!"
