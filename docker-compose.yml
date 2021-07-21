@@ -9,5 +9,3 @@ services:
         - GithubUsername=Example # your github username
         - GIT_PASSWORD=secret # necessary if privateRepo=1
         - GithubRepoName=Example # your github repo name
-      volumes:
-        - /home/runner/git/
